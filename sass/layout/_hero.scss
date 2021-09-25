@@ -1,0 +1,10 @@
+.hero{
+    text-align: center;
+    background-color: $background-color;
+    padding: 2rem 1rem;
+    
+    &__text{
+        font-weight: lighter;
+        color:gray;
+    }
+}

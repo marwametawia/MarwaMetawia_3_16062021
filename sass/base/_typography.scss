@@ -1,0 +1,32 @@
+
+
+body {
+    display: block;
+    font-family:$font-texte;
+    color: black;
+    font-size: 1rem;
+    margin: 0rem;
+  
+}
+
+h1 {
+    font-family: $font-texte;
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-style:normal;
+}
+
+h2{
+font-family: $font-texte;
+font-weight: bold;
+font-size: 1.3rem;
+}
+ul{
+    list-style-type: none;
+}
+
+a:link{
+    text-decoration:black;
+    text-decoration-color: black;
+    
+}

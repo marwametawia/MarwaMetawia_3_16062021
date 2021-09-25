@@ -1,0 +1,21 @@
+@import "./base/police";
+@import "./utils/variables";
+@import "./utils/mixins";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/buttons";
+@import "./components/loader";
+@import "./components/heart";
+@import "./components/check";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/location";
+@import "./layout/footer.scss";
+@import "./layout/tutorial";
+@import "./layout/restaurants";
+@import "./layout/menu";
+@import "./layout/top";
+

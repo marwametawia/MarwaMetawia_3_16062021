@@ -1,0 +1,14 @@
+.location {
+    display: flex;
+    justify-content: center;
+    background-color: $search-color;
+    font-size: 1rem;
+    box-shadow: 0px 0.2rem 0.2rem #73737338 inset;
+    padding: 1rem 1rem;
+    &__icon {
+        margin-right: 1rem;
+    }
+    &__text {
+        font-weight: 500;
+    }
+}

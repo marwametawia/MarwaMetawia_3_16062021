@@ -1,0 +1,45 @@
+.emptyheart{
+    @media screen and (min-width: 768px){
+        right: 3rem;
+    }
+    position: absolute;
+    z-index: 1;
+    right:3rem;
+    font-weight: normal;
+    color: black;
+    
+    &:hover {
+        
+            opacity: 0;
+            transition: opacity 300ms;
+           
+
+        }}
+        .plainheart{
+            @media screen and (min-width: 768px){
+                right:3rem ;
+            }
+           color:transparent;
+           background: $degrade;
+           background-clip: text;
+           -webkit-background-clip: text;
+            position: absolute;
+            z-index: 2;
+
+            right:1rem; 
+            opacity: 0;
+            &:hover {
+               
+                
+                opacity: 1;
+                transition: opacity 300ms;
+
+            }
+        }
+        
+            
+        
+   
+
+
+

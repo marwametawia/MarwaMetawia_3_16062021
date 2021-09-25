@@ -1,0 +1,30 @@
+.header {
+    text-align: center;
+    box-shadow: 0 0 0.5rem rgba(241, 241, 245, 0.2);
+
+    &__logo {
+        position: relative;
+        font-family: $font-titre, cursive;
+        color: black;
+
+        padding-bottom: 0.5rem;
+        font-size: 1.2rem;
+        margin-top: 0;
+        font-weight: normal;
+        letter-spacing: 1px;
+        @media screen and (min-width: 768px) {
+            font-size: 2rem;
+        }
+    }
+}
+.arrow {
+    position: relative;
+    top: 1.5rem;
+    left: -9rem;
+    z-index: 4;
+    @media screen and (min-width: 768px) {
+        font-size: 1.5rem;
+        top: 2.5rem;
+        left: -25rem;
+    }
+}
