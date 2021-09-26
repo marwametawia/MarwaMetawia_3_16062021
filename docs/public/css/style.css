@@ -391,7 +391,7 @@ a:link {
   font-size: 0.9rem;
   font-weight: 400;
 }
-.cartesfooter .emptyheart .plainheart {
+.cartesfooter .emptyheart, .cartesfooter .plainheart {
   width: 5%;
   line-height: 2rem;
 }
