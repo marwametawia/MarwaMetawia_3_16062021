@@ -1,5 +1,5 @@
 {
-    "name": "projet_3",
+    "name": "MarwaMetawia_3_16062021",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -8,12 +8,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/marwametawia/projet_3.git"
+        "url": "git+https://github.com/marwametawia/MarwaMetawia_3_16062021.git"
     },
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/marwametawia/projet_3/issues"
+        "url": "https://github.com/marwametawia/MarwaMetawia_3_16062021/issues"
     },
-    "homepage": "https://github.com/marwametawia/projet_3#readme"
+    "homepage": "https://github.com/marwametawia/MarwaMetawia_3_16062021#readme"
 }
