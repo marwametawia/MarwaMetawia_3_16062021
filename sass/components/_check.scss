@@ -1,9 +1,11 @@
 .check 
     {
         width: 0%;
+        height: 4.5rem;
         display: flex;
         background-color: $couleur-tertiaire;
         justify-content: center;
+        align-items: center;
         border-radius: 0rem 1rem 1rem 0rem;
         .fa-check-circle
         {

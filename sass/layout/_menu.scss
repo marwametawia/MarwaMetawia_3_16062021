@@ -5,10 +5,8 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        
     }
     & h3 {
-        
         margin-left: 1rem;
         padding-top: 1rem;
         font-weight: 400;
@@ -39,19 +37,19 @@
     .entrees,
     .plats,
     .desserts {
-        @media screen and (min-width: 768px){
+        @media screen and (min-width: 768px) {
             width: 33%;
         }
-        
+
         padding-bottom: 1rem;
         &__plat {
+            height: 4.5rem;
             display: flex;
             align-items: center;
             background-color: white;
             justify-content: space-between;
             border-radius: 1rem;
             margin: 1rem;
-            padding: 1rem;
             box-shadow: $boxshadow;
             &:hover {
                 cursor: pointer;
@@ -62,8 +60,8 @@
 
                     .fa-check-circle {
                         color: white;
-                        transform: rotate(-360deg);
-                        transition: ease-in-out 300ms;
+                        transform: rotate(360deg);
+                        transition: ease-in-out 500ms;
                     }
                 }
             }
@@ -71,13 +69,20 @@
         &__details {
             position: relative;
             flex-grow: 1;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
             min-width: 0;
+            padding: 1rem 0.25rem 1rem 0.25rem;
 
-            &--titre {
+            &--titre p{
                 font-weight: bold;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            &--soustitre p {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }
 
@@ -87,9 +92,9 @@
             text-align: center;
             padding-top: 0.5rem;
             font-weight: bold;
-            padding-left: 0.25rem;
-            padding-right: 0.25rem;
-            margin-left: 1rem;
+            padding: 1rem;
+            margin-left: 0.25rem;
+            
         }
     }
 
@@ -131,5 +136,4 @@
             opacity: 1;
         }
     }
-    
 }

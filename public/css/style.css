@@ -60,7 +60,7 @@ a:link {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: font 3s linear 1;
+  animation: font 5s linear 1;
   animation-fill-mode: forwards;
 }
 .loader span {
@@ -68,7 +68,7 @@ a:link {
   color: #9356dc;
   font-family: "Shrikhand", cursive;
   margin-bottom: 150px;
-  animation: wave 1s linear 10;
+  animation: wave 1s linear 5;
 }
 .loader .lettre:nth-child(1) {
   animation-delay: 0.1s;
@@ -129,7 +129,7 @@ a:link {
 .emptyheart {
   position: absolute;
   z-index: 1;
-  right: 3rem;
+  right: 1rem;
   font-weight: normal;
   color: black;
 }
@@ -165,9 +165,11 @@ a:link {
 
 .check {
   width: 0%;
+  height: 4.5rem;
   display: flex;
   background-color: #99e2d0;
   justify-content: center;
+  align-items: center;
   border-radius: 0rem 1rem 1rem 0rem;
 }
 .check .fa-check-circle {
@@ -284,6 +286,11 @@ a:link {
   align-items: center;
   background-color: #f6f6f6;
 }
+@media screen and (min-width: 768px) {
+  .tutorial__step {
+    margin: 1rem 5rem;
+  }
+}
 .tutorial__step:hover {
   background-color: #e9e9e9;
 }
@@ -309,16 +316,23 @@ a:link {
   border-radius: 50%;
   line-height: 1rem;
   position: absolute;
-  top: 1.2rem;
   font-size: 0.5rem;
   left: -0.75rem;
+}
+@media screen and (min-width: 768px) {
+  .tutorial__step--number {
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+    font-size: 1rem;
+  }
 }
 
 .restaurants {
   display: flex;
   flex-direction: column;
   background-color: #f2f2f2;
-  padding: 1.5rem 0rem 1.5rem 0rem;
+  padding: 1.5rem 1rem 1.5rem 0rem;
 }
 @media screen and (min-width: 768px) {
   .restaurants {
@@ -447,13 +461,13 @@ a:link {
 .menu .entrees__plat,
 .menu .plats__plat,
 .menu .desserts__plat {
+  height: 4.5rem;
   display: flex;
   align-items: center;
   background-color: white;
   justify-content: space-between;
   border-radius: 1rem;
   margin: 1rem;
-  padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0rem 0.25rem 0.5rem;
 }
 .menu .entrees__plat:hover,
@@ -471,23 +485,31 @@ a:link {
 .menu .plats__plat:hover .check .fa-check-circle,
 .menu .desserts__plat:hover .check .fa-check-circle {
   color: white;
-  transform: rotate(-360deg);
-  transition: ease-in-out 300ms;
+  transform: rotate(360deg);
+  transition: ease-in-out 500ms;
 }
 .menu .entrees__details,
 .menu .plats__details,
 .menu .desserts__details {
   position: relative;
   flex-grow: 1;
+  min-width: 0;
+  padding: 1rem 0.25rem 1rem 0.25rem;
+}
+.menu .entrees__details--titre p,
+.menu .plats__details--titre p,
+.menu .desserts__details--titre p {
+  font-weight: bold;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  min-width: 0;
 }
-.menu .entrees__details--titre,
-.menu .plats__details--titre,
-.menu .desserts__details--titre {
-  font-weight: bold;
+.menu .entrees__details--soustitre p,
+.menu .plats__details--soustitre p,
+.menu .desserts__details--soustitre p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu .entrees__prix,
 .menu .plats__prix,
@@ -497,9 +519,8 @@ a:link {
   text-align: center;
   padding-top: 0.5rem;
   font-weight: bold;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-  margin-left: 1rem;
+  padding: 1rem;
+  margin-left: 0.25rem;
 }
 .menu .button {
   margin: auto;
