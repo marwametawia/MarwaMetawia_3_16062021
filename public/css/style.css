@@ -202,6 +202,7 @@ a:link {
   top: 1.5rem;
   left: -9rem;
   z-index: 4;
+  color: black;
 }
 @media screen and (min-width: 768px) {
   .arrow {
@@ -435,16 +436,16 @@ a:link {
   margin: auto;
 }
 .menu .entrees {
-  -webkit-animation: slide-bottom 1s ease-out backwards;
-  animation: slide-bottom 1s ease-out backwards;
+  -webkit-animation: slideIn 1s linear backwards;
+  animation: slideIn 1s linear backwards;
 }
 .menu .plats {
-  -webkit-animation: slide-bottom 1s ease-out 1s backwards;
-  animation: slide-bottom 1s ease-out 1s backwards;
+  -webkit-animation: slideIn 1s linear 1s backwards;
+  animation: slideIn 1s linear 1s backwards;
 }
 .menu .desserts {
-  -webkit-animation: slide-bottom 1s ease-out 2s backwards;
-  animation: slide-bottom 1s ease-out 2s backwards;
+  -webkit-animation: slideIn 1s linear 2s backwards;
+  animation: slideIn 1s linear 2s backwards;
 }
 .menu .entrees,
 .menu .plats,
@@ -526,37 +527,24 @@ a:link {
   margin: auto;
   display: block;
 }
-@-webkit-keyframes slide-bottom {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+@-webkit-keyframes slideIn {
+  from {
     opacity: 0;
+    -webkit-transform: translate3d(0, 15px, 0);
   }
-  90% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-    opacity: 0.9;
-  }
-  100% {
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
+  to {
     opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
   }
 }
-@keyframes slide-bottom {
-  0% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+@keyframes slideIn {
+  from {
     opacity: 0;
+    transform: translate3d(0, 10px, 0);
   }
-  90% {
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
+  to {
     opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
 }
 
